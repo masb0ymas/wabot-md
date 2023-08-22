@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/masb0ymas/wabot-md/compare/v0.0.1...v0.0.2) (2023-08-22)
+
+
+### Bug Fixes
+
+* build script ([3d2bbfc](https://github.com/masb0ymas/wabot-md/commit/3d2bbfc010cce9d0efb6ccbe9e03bc8a9b00605a))
+
 ### 0.0.1 (2023-08-22)
 
 
