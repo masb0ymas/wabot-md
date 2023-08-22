@@ -8,7 +8,7 @@ import makeWASocket, {
 } from '@whiskeysockets/baileys'
 import fs from 'fs'
 import path from 'path'
-import { pino } from 'pino'
+import { logger } from '~/config/pino'
 import { CALLBACK_KEY, CREDENTIALS } from '~/core/constants'
 import { MessageReceived, StartSessionParams } from '~/core/interface'
 import { Messages } from '~/core/modules/message'
@@ -39,8 +39,6 @@ export const startSession = async (
     throw new WhatsappError(Messages.sessionAlreadyExist(sessionId))
   }
 
-  const logger = pino({ level: 'silent' })
-
   const { version } = await fetchLatestBaileysVersion()
 
   const startSocket = async () => {
@@ -52,7 +50,7 @@ export const startSession = async (
       version,
       printQRInTerminal: options.printQR,
       auth: state,
-      logger,
+      logger: logger,
       markOnlineOnConnect: false,
       browser: Browsers.ubuntu('Chrome'),
     })
