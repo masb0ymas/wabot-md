@@ -8,7 +8,7 @@
     "prebuild": "npm-run-all clean lint",
     "build": "tsc && tsc-alias",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prerelease": "npm run prebuild",
+    "prerelease": "npm run build",
     "release": "standard-version",
     "release:pre": "npm run release -- --prerelease",
     "release:patch": "npm run release -- --release-as patch",
