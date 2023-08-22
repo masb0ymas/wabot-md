@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/masb0ymas/wabot-md/compare/v0.0.2...v0.0.3) (2023-08-22)
+
+
+### Bug Fixes
+
+* bug send message with exists wa number ([5d9dbc5](https://github.com/masb0ymas/wabot-md/commit/5d9dbc5763421eda747db62ae9f1a44f17f69289))
+
 ### [0.0.2](https://github.com/masb0ymas/wabot-md/compare/v0.0.1...v0.0.2) (2023-08-22)
 
 

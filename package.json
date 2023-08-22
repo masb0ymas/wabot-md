@@ -1,6 +1,6 @@
 {
   "name": "wabot-md",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "wabot multi device with baileys lib",
   "scripts": {
     "clean": "rimraf lib dist coverage",
