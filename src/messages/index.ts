@@ -27,14 +27,14 @@ export const sendTextMessage = async ({
 
   if (!session) throw new WhatsappError(Messages.sessionNotFound(sessionId))
 
-  const oldPhone = to
+  // const oldPhone = to
   to = phoneToJid({ to, isGroup })
 
-  const isRegistered = await isExist({ sessionId, to, isGroup })
+  // const isRegistered = await isExist({ sessionId, to, isGroup })
 
-  if (!isRegistered) {
-    throw new WhatsappError(`${oldPhone} is not registered on Whatsapp`)
-  }
+  // if (!isRegistered) {
+  //   throw new WhatsappError(`${oldPhone} is not registered on Whatsapp`)
+  // }
 
   const result = await session.sendMessage(
     to,
