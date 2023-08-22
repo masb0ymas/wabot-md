@@ -2,8 +2,6 @@
   "name": "wabot-md",
   "version": "0.0.0",
   "description": "wabot multi device with baileys lib",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
     "clean": "rimraf lib dist coverage",
     "lint": "npx eslint '*/**/*.{js,jsx,ts,tsx}' --quiet --fix",
@@ -16,7 +14,25 @@
     "baileys"
   ],
   "author": "masb0ymas <n.fajri@mail.com>",
+  "homepage": "https://github.com/masb0ymas/wabot-md#readme",
   "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masb0ymas/wabot-md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masb0ymas/wabot-md/issues"
+  },
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^10.0.1",
